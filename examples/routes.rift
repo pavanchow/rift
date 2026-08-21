@@ -1,0 +1,10 @@
+# Example Rift routing rules. First match wins.
+
+# Health check answered by the proxy itself, no backend.
+route path "/health" -> respond 200 "ok"
+
+# Version-prefixed API, matched by regex, forwarded to the API backend.
+route host "api.example.com" path ~ "^/v[0-9]+/" -> upstream "http://127.0.0.1:9001"
+
+# Everything else on the main host goes to the app server.
+route path "/" -> upstream "http://127.0.0.1:8000"
