@@ -1,3 +1,5 @@
+<img src="docs/logo.svg" alt="Rift logo" width="96">
+
 # Rift
 
 **A programmable single-binary reverse proxy where routing rules are a compiled DSL, not YAML.**

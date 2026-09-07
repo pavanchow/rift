@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rift: a programmable single-binary reverse proxy where routing rules are a compiled DSL</title>
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
   <meta name="description" content="Rift is a programmable single-binary reverse proxy in Rust where routing rules are a compiled DSL, not YAML. An nginx alternative built on hyper: host, path, and header matching, pooled upstream forwarding, and streaming. By Pavan Nallamothu (pavanchow).">
   <meta name="author" content="Pavan Nallamothu (pavanchow)">
   <meta name="keywords" content="rust reverse proxy, nginx alternative rust, single binary api gateway, hyper based proxy, programmable http router, reverse proxy DSL, Pavan Nallamothu, pavanchow">
@@ -92,6 +93,7 @@
   </div></nav>
 
   <div id="try" class="hero">
+    <img src="logo.svg" alt="Rift logo" width="72" height="72" style="display:block;margin:0 auto 18px">
     <p class="eyebrow">Rules are code, not config</p>
     <h1>The reverse proxy<br>you can read.</h1>
     <p class="sub">Rift is a programmable single-binary reverse proxy where routing rules are a compiled DSL, not YAML. One static Rust binary on hyper: match host, path, and headers, forward over pooled connections, and stream the response back.</p>
@@ -116,6 +118,16 @@
       <p class="caption">write routes, send a request, see which rule wins, first match wins</p>
     </div>
   </div>
+
+  <section>
+    <details style="border:1px solid var(--line,#e6e6ea);border-radius:14px;padding:16px 22px;background:var(--accent-soft)">
+      <summary style="cursor:pointer;font-weight:600">How to use this playground</summary>
+      <div style="margin-top:12px;color:var(--muted)">
+        <p>Edit the <b>routes.rift</b> box to write routing rules, one per line. Each rule matches on host, path, and headers, then either answers inline (<code>respond</code>) or forwards to an <code>upstream</code>. Order matters: the first rule that matches wins.</p>
+        <p style="margin-top:10px">Fill in the <b>host</b>, <b>path</b>, and optional <b>header</b> fields to describe an incoming request, and the result panel shows which rule the compiled matcher picks and what it does. Change a rule or the request and the match updates live.</p>
+      </div>
+    </details>
+  </section>
 
   <section id="why">
     <h2>One binary. Compiled rules. Pooled and streaming.</h2>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="Rift logo">
+  <defs>
+    <linearGradient id="ri-g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#a06cf0"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="124" height="124" rx="28" fill="url(#ri-g)"/>
+  <g stroke="#ffffff" stroke-width="5" stroke-linecap="round" fill="none">
+    <line x1="20" y1="64" x2="50" y2="64"/>
+    <path d="M67 60 L98 38"/>
+    <path d="M69 64 L100 64"/>
+    <path d="M67 68 L98 90"/>
+  </g>
+  <rect x="50" y="52" width="24" height="24" rx="6" fill="#ffffff"/>
+  <g fill="#ffffff">
+    <circle cx="20" cy="64" r="6"/>
+    <circle cx="102" cy="38" r="6.5"/>
+    <circle cx="104" cy="64" r="6.5"/>
+  </g>
+  <circle cx="102" cy="90" r="6.5" fill="url(#ri-g)" stroke="#ffffff" stroke-width="4"/>
+</svg>
