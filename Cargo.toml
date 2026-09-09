@@ -1,6 +1,7 @@
 [package]
 name = "rift"
 version = "0.1.0"
+license = "MIT"
 edition = "2021"
 description = "A programmable single-binary reverse proxy where routing rules are a compiled DSL, not YAML."
 
