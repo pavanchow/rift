@@ -95,6 +95,22 @@
     .tag.a{background:#dcf5e7;color:var(--ok)}
     footer{padding:64px 0;border-top:1px solid var(--line);text-align:center;color:var(--muted)}
     footer .name{color:var(--ink);font-weight:600}
+
+    @media (prefers-color-scheme: dark){
+      :root{
+        --accent:#8b5cf6;--accent-soft:#221a33;
+        --ink:#ececf0;--muted:#a4a7b3;--faint:#71747f;
+        --line:#2a2b32;--panel:#17181e;--panel2:#1b1c22;
+        --ok:#34d399;--miss:#fb923c;
+      }
+      body{background:#0d0e12}
+      nav{background:rgba(13,14,18,.82)}
+      .btn.s:hover{background:#23242c}
+      .card{background:linear-gradient(180deg,#191a21,#131319);box-shadow:0 1px 0 rgba(255,255,255,.03) inset,0 18px 50px -30px rgba(0,0,0,.6)}
+      .result{background:#17181e}
+      .tag.m{background:#221a33}
+      .tag.a{background:#123524}
+    }
   </style>
 </head>
 <body>
