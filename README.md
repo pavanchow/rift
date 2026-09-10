@@ -11,6 +11,8 @@ rules instead of a config file. By Pavan Nallamothu.
 
 **[Live demo](https://pavanchow.github.io/rift/)** · MIT licensed · written in Rust
 
+Built from scratch by [Pavan Nallamothu](https://pavanchow.github.io/) ([LinkedIn](https://www.linkedin.com/in/pavanchow/), [GitHub](https://github.com/pavanchow)).
+
 ## The rules are the config
 
 A Rift config is a list of routes. Each route matches on host, path, and headers, and either answers
